@@ -26,6 +26,8 @@ body{
 main{
   display:flex;
   justify-content:center;
+  flex-wrap:wrap;
+  flex:1 1 auto;
   align-items:center;
   min-height: 95vh;
 }
@@ -35,6 +37,9 @@ main{
   padding: 2rem;
   background-color: #ffffff;
   border-radius:5px;
+  
+  flex-wrap:wrap;
+  flex:1 1 auto;
 }
 
 .title{
@@ -48,8 +53,8 @@ main{
     justify-content:space-between;
     height: 200px;
     padding: .2rem 0;
-    /* width:700px; */
     height:max-content;
+    flex-wrap:wrap;
 }
 
 .search{
@@ -67,6 +72,7 @@ ul{
 .nav-list{
     display:flex;
     align-items:center;
+    flex-wrap:wrap;
 }
 
 .nav-items{
@@ -95,12 +101,13 @@ ul{
     width:240px;
     padding:1rem;
     background-color: #FBFCFF;
-    border-radius:5px
+    border-radius:5px;
+    
 }
 
-.card-active{
-    border:solid #87A0CE 1px;
-    box-shadow:  0 0 1px 0 #E2E9F9;
+.card:hover{
+    border:solid #E2E9F9 1px;
+    box-shadow: 1px 0px 10px 1px #E2E9F9;
 }
 
 .card-details{
@@ -124,17 +131,17 @@ img{
 }
 
 .card-name{
-    font-size:1rem;
-    font-weight:700;
+    font-size:.8rem;
+    font-weight:900;
     color:#373C47;
 }
 
 .card-city{
-    font-size:.5rem;
-    font-weight:700;
+    font-size:.6rem;
+    font-weight:900;
     color:#373C47;
     line-height:1;
-    margin:.4rem 0;
+    margin:.2rem 0 .4rem 0;
 }
 
 .tags{
@@ -145,3 +152,11 @@ img{
     padding:.2rem;
     font-weight:700;
 }
+
+@media (max-width: 680px) {
+  #nav-list{
+    margin:1rem 0;
+  }
+}
+
+
