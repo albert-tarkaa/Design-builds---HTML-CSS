@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body{
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
+main{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  flex:1;
+  align-items:center;
+  min-height: 95vh;
+}
+
+p{
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.container{
+  max-width: 1100px;
+  padding: 4rem;
+  background-color: transparent;
+  border-radius:5px;
+  display: flex;
+  flex-wrap:wrap;
+  flex:1;
+  align-items:stretch;
+  height: 100%;
+}
+
+.left{
+    background-color: #23252F;
+    width: 60%;
+    padding: 3rem 4rem 3rem 8rem;
+}
+
+.right{
+    background-color: #2B2D38;
+    display: flex;
+    width: 40%;
+    padding: 1rem;
+}
+
+.date{
+    font-size: .8rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.details{
+    font-size: .9rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    line-height: 1.5;
+    display: block;
+}
+
+.title{
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: block;
+    margin: .5rem 0 1rem 0;
+}
+
+.form-container{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+
+.form-container-alt{
+    width: 100%;
+}
+
+.form-control{
+    width: 50%;
+}
+
+label{
+    display: inline-block;
+    font-size: .8rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+input[type="text"]{
+    padding:.8rem;
+    font-size:.7rem;
+    width:100%;
+    border: solid #3f4343 1px;
+    background-color: #23252F;
+    margin-bottom: .8rem;
+}
+
+input[type="checkbox"]{
+    -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+
+    padding:.2rem;
+    border: solid #3f4343 1px;
+    background: #23252F;
+    width: 1rem;
+    height: 1rem;
+}
+
+input[type="button"]{
+    padding:.8rem 1.2rem;
+    font-size:.7rem;
+    font-weight: 900;
+    width:max-content;
+    border: solid #3f4343 1px;
+    background-color: #FFFFFF;
+    margin: .8rem 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.form-control-alt > input:checked {
+  background-color: #FFFFFF;
+}
+
+.work-input{
+    height: 100px;
+}
