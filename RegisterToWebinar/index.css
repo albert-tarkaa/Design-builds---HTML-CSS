@@ -102,7 +102,7 @@ label{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 
-input[type="text"]{
+input[type="text"],input[type="email"]{
     padding:.8rem;
     font-size:.7rem;
     width:100%;
