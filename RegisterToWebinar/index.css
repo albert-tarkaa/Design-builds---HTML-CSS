@@ -142,3 +142,26 @@ input[type="button"]{
 .work-input{
     height: 100px;
 }
+
+@media (max-width: 680px) {
+  .form-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .left{
+    background-color: #23252F;
+    width: 100%;
+    padding: 1rem;
+    }
+    .container{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .right{
+        width: 100%;
+    }
+    .form-control{
+    width: 100%;
+    }
+}
