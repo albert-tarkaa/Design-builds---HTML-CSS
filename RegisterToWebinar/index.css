@@ -39,7 +39,7 @@ p{
 }
 
 .container{
-  max-width: 1100px;
+  max-width: 1190px;
   padding: 4rem;
   background-color: transparent;
   border-radius:5px;
@@ -58,7 +58,6 @@ p{
 
 .right{
     background-color: #2B2D38;
-    display: flex;
     width: 40%;
     padding: 1rem;
 }
@@ -96,6 +95,10 @@ p{
     width: 50%;
 }
 
+.form-control-alt{
+    
+}
+
 label{
     display: inline-block;
     font-size: .8rem;
@@ -108,7 +111,7 @@ input[type="text"],input[type="email"]{
     width:100%;
     border: solid #3f4343 1px;
     background-color: #23252F;
-    margin-bottom: .8rem;
+    margin-bottom: 1rem;
 }
 
 input[type="checkbox"]{
@@ -143,6 +146,87 @@ input[type="button"]{
     height: 100px;
 }
 
+.socials{
+    margin: 5rem 1rem;
+    padding: 1rem;
+}
+
+.socials > p {
+    margin: 2rem 0 0 0;
+    font-weight: 400;
+    font-size: .8rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.icons{
+    padding: 0 .6rem 0 0;
+}
+
+.feather{
+    width: 1rem;
+}
+
+.guests{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.guests > p {
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: 2px;
+}
+
+.guest-item{
+    display: flex;
+    margin: .3rem 0;
+}
+
+.guest-details{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+.guest-details p{
+    font-size: .8rem;
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+}
+
+.guest-details .name{
+    font-weight: 900;
+    line-height: .7;
+}
+
+.guest-details .role{
+    font-weight: 400;
+    font-size: .7rem;
+}
+
+img{
+    clip-path: circle();
+    width: 13%;
+    margin:.3rem 1rem .3rem 0;
+}
+
+.host{
+    display: flex;
+    flex-direction: column;
+    margin:0 1rem;
+    padding:0 1rem;
+}
+
+.host > p{
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    font-size: .9rem;
+    letter-spacing: 2px;
+}
+
 @media (max-width: 800px) {
   .form-container{
     width: 100%;
@@ -163,5 +247,17 @@ input[type="button"]{
     }
     .form-control{
     width: 100%;
+    }
+
+    .socials, .guests{
+        margin: 0 1rem;
+    }
+
+    .socials > p {
+    margin: .3rem 0 0 0;
+    }
+
+    .host{
+        margin: 1rem;
     }
 }
